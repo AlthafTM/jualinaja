@@ -3,3 +3,12 @@ data/
 __pycache__/
 .DS_Store
 server.log
+
+# artefak rekaman — bisa dibuat ulang
+demo/frames/
+demo/overlay/
+demo/check/
+demo/concat_overlay.txt
+demo/timeline.json
+demo/foto-contoh.png
+demo/assembled.mp4
