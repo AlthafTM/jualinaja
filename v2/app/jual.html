@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pasang barang — JualinAja</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="jual">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="wrap" style="padding:32px 0 0;max-width:760px">
+  <div class="mono" style="margin-bottom:6px">PASANG</div>
+  <h1 style="margin-bottom:6px">Pasang barang</h1>
+  <p class="muted" style="margin-top:0">Isi apa adanya. Barang yang jujur dideskripsikan lebih cepat laku.</p>
+  <form id="form" class="card card-pad stack" style="margin-top:18px">
+    <label class="field"><span class="lbl">Judul barang *</span>
+      <input name="title" minlength="4" maxlength="120" required placeholder="Kamera Canon AE-1 body only"></label>
+    <div style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+      <label class="field"><span class="lbl">Harga (Rp) *</span>
+        <input name="price" type="number" min="1" step="1" required placeholder="1250000"></label>
+      <label class="field"><span class="lbl">Kategori *</span><select name="category" required></select></label>
+      <label class="field"><span class="lbl">Kondisi *</span><select name="condition" required></select></label>
+      <label class="field"><span class="lbl">Kota *</span><select name="city" required></select></label>
+    </div>
+    <label class="field"><span class="lbl">Deskripsi</span>
+      <textarea name="description" maxlength="4000" placeholder="Minus, kelengkapan, alasan dijual…"></textarea></label>
+    <label class="field"><span class="lbl">Foto (maks 10, 8 MB per foto)</span>
+      <input id="photos" type="file" name="photos" accept="image/*" multiple></label>
+    <div id="preview" style="display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(110px,1fr))"></div>
+    <div class="note">Jual beli langsung antara kamu dan pembeli. JualinAja tidak menahan uang dan tidak mengatur pengiriman.</div>
+    <button class="btn primary" id="submit" type="submit" style="justify-content:center">Pasang barang</button>
+  </form>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>

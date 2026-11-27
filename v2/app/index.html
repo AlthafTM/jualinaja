@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JualinAja — pasar barang bekas antar warga</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="index">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <div class="mono" style="margin-bottom:10px">PASAR BARANG BEKAS · ANTAR WARGA</div>
+      <h1>Jual yang tidak terpakai.<br>Cari yang masih layak.</h1>
+      <p>Pasang barang dalam satu menit, atau tulis barang yang sedang kamu cari beserta budget-nya — biar penjual di kotamu yang menghubungi.</p>
+    </div>
+    <form class="searchbar" action="/jelajah.html" method="get" role="search">
+      <label class="sr" for="q">Cari barang</label>
+      <input id="q" name="q" placeholder="Cari kamera, sepeda lipat, blender…" autocomplete="off">
+      <label class="sr" for="city">Kota</label>
+      <select id="city" name="city">
+        <option value="">Semua kota</option>
+        <option>Jakarta</option><option>Bandung</option><option>Surabaya</option>
+        <option>Yogyakarta</option><option>Semarang</option><option>Medan</option>
+        <option>Makassar</option><option>Denpasar</option><option>Bekasi</option>
+        <option>Depok</option><option>Tangerang</option><option>Bogor</option>
+        <option>Malang</option><option>Palembang</option>
+      </select>
+      <button class="btn" type="submit">Cari</button>
+      <a class="btn primary" href="/jual.html" style="border:0">+ Pasang</a>
+    </form>
+    <div class="row tight">
+      <span class="mono muted">Kategori:</span>
+      <div id="cats" class="row tight"></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding:44px 0 0">
+  <div class="row" style="justify-content:space-between;margin-bottom:16px">
+    <div>
+      <div class="mono muted">PALING DILIRIK</div>
+      <h2 style="margin:.15em 0 0">Lagi banyak dilihat</h2>
+    </div>
+    <a class="btn ghost" href="/jelajah.html?sort=popular">Lihat semua →</a>
+  </div>
+  <div class="grid" id="featured"></div>
+</section>
+
+<section class="wrap" style="padding:44px 0 0">
+  <div class="row" style="justify-content:space-between;margin-bottom:16px">
+    <div>
+      <div class="mono muted">BARU DIPASANG</div>
+      <h2 style="margin:.15em 0 0">Baru masuk</h2>
+    </div>
+    <a class="btn ghost" href="/jelajah.html">Lihat semua →</a>
+  </div>
+  <div class="grid" id="newest"></div>
+</section>
+
+<section class="wrap" style="padding:44px 0 0">
+  <div class="card card-pad" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;align-items:center">
+    <div>
+      <div class="mono muted">BARANG AKTIF</div>
+      <div style="font:800 clamp(30px,6vw,52px)/1 Inter,sans-serif" id="stat-total">—</div>
+    </div>
+    <div>
+      <div class="mono muted">CARA KERJA</div>
+      <p style="margin:.3em 0 0;font-size:14px">Pasang barang dengan foto, harga, kondisi, dan kota. Pembeli menawar lewat chat, kamu terima atau tolak. Pembayaran dan serah-terima langsung antara kalian.</p>
+    </div>
+    <div><a class="btn primary" href="/jual.html">Pasang barang sekarang →</a></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>

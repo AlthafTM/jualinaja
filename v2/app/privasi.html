@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privasi — JualinAja</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="wrap" style="padding:32px 0 0;max-width:760px">
+  <div class="mono muted">PRIVASI</div>
+  <h1>Data yang kami simpan</h1>
+  <div class="stack">
+    <div class="card card-pad"><h3>Akun</h3><p>Email, nama tampilan, kota, dan bio. Kata sandi disimpan sebagai hash PBKDF2-HMAC-SHA256 dengan salt acak — tidak pernah sebagai teks biasa.</p></div>
+    <div class="card card-pad"><h3>Sesi</h3><p>Cookie sesi <code>sid</code> bersifat HttpOnly dan SameSite=Lax, berlaku 30 hari, dan dihapus saat kamu keluar.</p></div>
+    <div class="card card-pad"><h3>Barang dan pesan</h3><p>Listing, foto, tawaran, pesan, ulasan, laporan, dan blokir disimpan di basis data SQLite di server ini.</p></div>
+    <div class="card card-pad"><h3>Yang tidak kami lakukan</h3><p>Tidak ada pelacak pihak ketiga, tidak ada iklan, tidak ada penjualan data. Foto tidak diproses ulang; EXIF belum dihapus otomatis.</p></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>
