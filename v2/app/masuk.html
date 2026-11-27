@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk atau daftar — JualinAja</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="masuk">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="wrap auth">
+  <h1 id="auth-title" style="text-align:center">Masuk</h1>
+  <div class="tabs" role="tablist">
+    <button role="tab" data-mode="login" aria-selected="true">Masuk</button>
+    <button role="tab" data-mode="register" aria-selected="false">Buat akun</button>
+  </div>
+  <form id="auth-form" class="card card-pad stack" style="box-shadow:6px 6px 0 #1b1524">
+    <div class="note err" id="err" hidden></div>
+    <label class="field"><span class="lbl">Email</span>
+      <input name="email" type="email" required autocomplete="email" placeholder="kamu@contoh.id"></label>
+    <div id="reg-only" hidden class="stack" style="gap:12px">
+      <label class="field"><span class="lbl">Nama tampilan</span>
+        <input name="name" minlength="2" maxlength="60" autocomplete="name" placeholder="Nama kamu"></label>
+      <label class="field"><span class="lbl">Kota</span>
+        <input name="city" maxlength="60" autocomplete="address-level2" placeholder="Bandung"></label>
+    </div>
+    <label class="field"><span class="lbl">Kata sandi</span>
+      <input name="password" type="password" minlength="8" required autocomplete="current-password" placeholder="minimal 8 karakter"></label>
+    <button class="btn primary full" id="submit" type="submit">Masuk</button>
+    <p class="mono muted" style="margin:0;font-size:10px;line-height:1.6">Akun demo: rangga.putra@example.com · demo1234</p>
+  </form>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>

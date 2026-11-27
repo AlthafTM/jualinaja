@@ -9,3 +9,12 @@ _site-live/
 _site-before-ui/
 node_modules/
 artifacts/
+
+# artefak rekaman demo — bisa dibuat ulang
+demo/frames/
+demo/overlay/
+demo/check/
+demo/concat_overlay.txt
+demo/timeline.json
+demo/foto-contoh.png
+demo/assembled.mp4

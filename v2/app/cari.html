@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Papan cari — JualinAja</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="cari">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="wrap" style="padding:32px 0 0">
+  <div class="mono" style="margin-bottom:6px">PAPAN CARI</div>
+  <h1 style="margin-bottom:6px">Barang yang sedang dicari</h1>
+  <p class="muted" style="margin-top:0">Tulis barang yang kamu cari beserta rentang budget. Penjual yang punya barangnya bisa menghubungi.</p>
+  <div class="row" style="margin:16px 0">
+    <label class="field" style="max-width:240px"><span class="lbl">Filter kota</span>
+      <select id="w-city"><option value="">Semua kota</option></select></label>
+  </div>
+  <div class="grid wide" id="wanted"></div>
+</section>
+
+<section class="wrap" style="padding:44px 0 0;max-width:640px">
+  <h2>Pasang permintaan</h2>
+  <div class="note" id="login-hint" hidden><a href="/masuk.html?next=/cari.html">Masuk dulu</a> untuk memasang permintaan.</div>
+  <form id="wform" class="card card-pad stack" style="margin-top:12px">
+    <label class="field"><span class="lbl">Apa yang dicari *</span>
+      <input name="title" minlength="4" maxlength="120" required placeholder="Cari monitor 24 inci IPS"></label>
+    <div style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+      <label class="field"><span class="lbl">Budget min (Rp)</span><input name="budget_min" type="number" min="0" step="1" value="0"></label>
+      <label class="field"><span class="lbl">Budget max (Rp)</span><input name="budget_max" type="number" min="0" step="1" value="0"></label>
+      <label class="field"><span class="lbl">Kota</span><select name="city"></select></label>
+    </div>
+    <label class="field"><span class="lbl">Keterangan</span>
+      <textarea name="description" maxlength="2000" placeholder="Spesifikasi, toleransi minus, kapan butuh…"></textarea></label>
+    <button class="btn primary" type="submit" style="justify-content:center">Pasang permintaan</button>
+  </form>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>
