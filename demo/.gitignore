@@ -1,0 +1,12 @@
+# artefak rekaman — bisa dibuat ulang dengan record.mjs + motion.py
+frames/
+overlay/
+check/
+concat_overlay.txt
+timeline.json
+foto-contoh.png
+assembled.mp4
+
+# hanya video final yang masuk repo
+!jualinaja-demo.mp4
+!jualinaja-demo-web.mp4

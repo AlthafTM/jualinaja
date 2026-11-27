@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dasbor — JualinAja</title>
+<meta name="description" content="JualinAja — pasar barang bekas antar warga. Jual barang yang tidak terpakai, atau tulis barang yang sedang dicari beserta budget-nya.">
+<meta name="theme-color" content="#cfc4f0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JualinAja">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body data-page="akun">
+<a class="sr" href="#main">Lewati ke isi</a>
+<header class="hdr"><div id="hdr"></div></header>
+<main id="main">
+
+<section class="wrap" style="padding:32px 0 0">
+  <div class="row" style="justify-content:space-between;align-items:flex-end">
+    <div>
+      <div class="mono muted">DASBOR</div>
+      <h1 style="margin:.1em 0 0" id="who">Memuat…</h1>
+      <div class="muted" id="who-sub" style="font-size:14px"></div>
+    </div>
+    <a class="btn primary" href="/jual.html">+ Pasang barang</a>
+  </div>
+  <div class="tabs" id="tabs" role="tablist" style="margin-top:22px">
+    <button role="tab" data-tab="listings" aria-selected="true">Barang saya</button>
+    <button role="tab" data-tab="saved" aria-selected="false">Tersimpan</button>
+    <button role="tab" data-tab="notif" aria-selected="false">Notifikasi</button>
+  </div>
+  <div class="card card-pad" id="pane" style="margin-bottom:44px"></div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="font-size:18px;margin-bottom:8px">JualinAja</div>
+      <p style="font-size:13px;margin:0;max-width:32ch">Pasar barang bekas antar warga. Jual yang tidak terpakai, cari yang masih layak pakai.</p>
+    </div>
+    <div>
+      <h4>Jelajahi</h4>
+      <a href="/jelajah.html">Semua barang</a>
+      <a href="/cari.html">Papan cari</a>
+      <a href="/jual.html">Pasang barang</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="/bantuan.html">Cara kerja</a>
+      <a href="/privasi.html">Privasi</a>
+      <a href="/syarat.html">Syarat pakai</a>
+    </div>
+    <div>
+      <h4>Akun</h4>
+      <a href="/masuk.html">Masuk / daftar</a>
+      <a href="/akun.html">Dasbor saya</a>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script>
+
+</body>
+</html>
